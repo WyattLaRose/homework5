@@ -1,0 +1,125 @@
+/*
+Assignment No. 4: Style your webpage
+Name: Wyatt LaRose
+Student Email: Wyatt_LaRose@student.uml.edu
+Computer Science Email: wlarose@cs.uml.edu
+Affiliation: UMass Lowell Computer Science, Junior Year
+Date Created: 10/9/2019
+Description:
+This was to style a website based on what we have learned with css. Things such as floating, font-size, colors, selectors, spacings, centering and alot of other css styles went in to creating this to fit and scale based on the size of the web page.
+*/
+
+/*This sets the background color and the margin size*/
+body{
+	background-color: #25274D;
+	margin: 0px;
+}
+/*
+Everything below this is  to the " ************" is making the top of the page set to the gray color and setting the colors for the nav list. This include changing the color of the text for the nav bar when hovering and correctly spacing everything and centering everything using margin auto
+*/
+.top h1{
+	margin: 0px;
+	text-align: center;
+	padding-top: 10px;
+}
+.top{
+	background-color: #AAABB8;
+	min-width: 925px;
+}
+nav li{
+	display: inline;
+	padding:10px;
+}
+nav{
+	text-align: center;
+	margin: 0 auto;
+	width:100%;
+	padding: 5px;
+	
+}
+nav a{
+	text-decoration: none;
+	color:white;
+	padding:10px;
+}
+nav a:hover{
+	color: #AAABB8;
+	background-color: white;
+}
+nav ul{
+	padding: 0px;	
+}
+
+/*****************************************************************************************************************************************/
+/*
+Everything below this is  to the " ************" creating the main body of the website. One large section called main in which smaller div classes called Assignments sit within. these are designed to float one next to eachother and scale to the page. Within these classses they are styls for the heading to be centered, and the text to float up next to the place holder img. Note, this can and will be update with real assignments but for now just holds the place holder imgs and the Lorem Ipsum to simulate real text.
+*/
+#Main{
+	min-width: 925px;
+	overflow: hidden;
+	
+}
+.Assignment{
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-top: 10px;
+	width:48%;
+	background-color: #29648A;
+	float: left;
+	min-height: 300px;
+}
+.Assignment h2{
+	text-align: center;
+	margin: 10px;
+	
+}
+
+.Assignment img{
+	float:left;
+	margin: 10px;
+	
+}
+.Assignment p::first-letter{
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+}
+/*****************************************************************************************************************************************/
+/*
+Everything below this is  to the "************" about me and footer styles, the about me basicaly sets a width and centers it and changes the color. It also centers the header sets the first letter in the paragraph to be 20px, bold, and italic. The footer is a centered <p> with text-align: center; and the color is set to white
+*/
+#AboutMe{
+	width: 75%;
+	min-width:925px;
+	margin: 0 auto;
+	display:block;
+	background-color: white;
+	padding-bottom:10px;
+	margin-bottom:10px;
+	background-color: #AAABB8;
+	
+}
+#AboutMe h2{
+	text-align: center;
+	padding-top: 10px;
+	font-style: italic;
+	
+}
+#AboutMe p{
+	margin-left: 40px;
+	margin-right: 40px;
+	
+}
+#AboutMe p::first-letter{
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+
+}
+
+
+#foot p{
+	text-align: center;
+	color: #9a9494;
+	
+}
